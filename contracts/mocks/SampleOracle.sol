@@ -1,15 +1,16 @@
+// SPDX-License-Identifier: MIT
+
 pragma solidity 0.8.4;
 import "../interfaces/IERC2362.sol";
 
 /**
-* @title sampleOracle
+* @title SampleOracle
 * @notice This contract is only and example/place holder of an ADO
 * compliant oracle. It is centralized and should not be used in a production
 * environment. The purpose of this contract is to allow for testing the
 * ADOMedianizer.sol contract.
 */
-
-contract SampleOracle is IERC2362{
+contract SampleOracle is IERC2362 {
     /*Variables*/
     mapping(bytes32=>mapping(uint=>int256)) valuesByID;
     mapping (bytes32 => uint[]) timestampsByID;

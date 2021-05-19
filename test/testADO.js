@@ -23,7 +23,7 @@ contract('ADO Medianizer Tests', function(accounts) {
     	await adoMedianizer.addOracle(sampleOracle2.address)
     	await adoMedianizer.addOracle(sampleOracle3.address)
     })
-    it("Test ADOMEdianizer.valueFor", async function(){
+    it("Test ADOMedianizer.valueFor", async function(){
         await sampleOracle1.setValue(bytes,1000)
         await sampleOracle2.setValue(bytes,2000)
         await sampleOracle3.setValue(bytes,3000)

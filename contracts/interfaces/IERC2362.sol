@@ -1,8 +1,10 @@
+// SPDX-License-Identifier: MIT
+
 pragma solidity >=0.5.0 <0.9.0;
 
 /**
-    * @dev EIP2362 Interface for pull oracles
-    * https://github.com/tellor-io/EIP-2362
+* @dev EIP2362 Interface for pull oracles
+* https://github.com/adoracles/EIPs/blob/erc-2362/EIPS/eip-2362.md
 */
 interface IERC2362
 {
