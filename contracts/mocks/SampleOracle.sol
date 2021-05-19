@@ -1,5 +1,5 @@
 pragma solidity ^0.6.0;
-import "../IERC2362.sol";
+import "../interfaces/IERC2362.sol";
 
 /**
 * @title sampleOracle

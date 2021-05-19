@@ -1,5 +1,5 @@
 var ADOMedianizer = artifacts.require("./ADOMedianizer.sol");
-var sampleOracle = artifacts.require("./testContracts/sampleOracle.sol");
+var sampleOracle = artifacts.require("./mocks/SampleOracle.sol");
 
 
 function sleep_s(secs) {

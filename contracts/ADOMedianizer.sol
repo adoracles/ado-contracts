@@ -2,7 +2,7 @@ pragma solidity ^0.6.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/EnumerableSet.sol";
-import "./IERC2362.sol";
+import "./interfaces/IERC2362.sol";
 
 /**
 * @title ADOMedianizer
