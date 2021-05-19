@@ -1,7 +1,7 @@
 {
-  "name": "adomedianizer",
+  "name": "ado-contracts",
   "version": "1.0.0",
-  "description": "Median of multiple oracles",
+  "description": "ADO contracts",
   "main": "truffle-config.js",
   "directories": {
     "test": "test"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tellor-io/ADOMedianizer.git"
+    "url": "git+https://github.com/adoracles/ado-contracts.git"
   },
   "keywords": [
     "ado",
@@ -21,9 +21,9 @@
   "author": "ado",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tellor-io/ADOMedianizer/issues"
+    "url": "https://github.com/adoracles/ado-contracts/issues"
   },
-  "homepage": "https://github.com/tellor-io/ADOMedianizer#readme",
+  "homepage": "https://github.com/adoracles/ado-contracts#readme",
   "dependencies": {
     "@openzeppelin/contracts": "^3.0.0-rc.1",
     "web3": "^1.2.6"

@@ -13,7 +13,7 @@ Contracts:
 * SampleOracle - is a test centralized oracle contract that is compliant with the EIP-2362 and used for testing ADOMedianizer. 
 
 
-More information on EIP2362 can be found at:[https://github.com/tellor-io/EIP-2362](https://github.com/tellor-io/EIP-2362)
+More information on EIP2362 can be found at: [https://github.com/adoracles/EIPs/tree/erc-2362](https://github.com/adoracles/EIPs/tree/erc-2362)
 
 #### Disclaimer
 
@@ -22,4 +22,4 @@ This is **unaudited** code for demo purposes only.
 
 #### Contributors<a name="contributors"> </a>
 
-This repository is maintained by the Tellor team and the Alliance of Decentralized Oracles - [www.tellor.io](https://www.tellor.io)
+This repository is maintained by the Alliance of Decentralized Oracles - [www.tellor.io](https://www.tellor.io)
