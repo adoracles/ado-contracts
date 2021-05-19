@@ -1,4 +1,4 @@
-pragma solidity ^0.6.0;
+pragma solidity 0.8.4;
 import "../interfaces/IERC2362.sol";
 
 /**
@@ -20,8 +20,8 @@ contract SampleOracle is IERC2362{
     * @param _value is the value
     */
     function setValue(bytes32 _id, int256 _value) external{
-      	valuesByID[_id][now] = _value;
-      	timestampsByID[_id].push(now);
+      	valuesByID[_id][block.timestamp] = _value;
+      	timestampsByID[_id].push(block.timestamp);
     }
 
     /**

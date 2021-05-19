@@ -1,7 +1,7 @@
-pragma solidity ^0.6.0;
+pragma solidity 0.8.4;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/EnumerableSet.sol";
+import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
 import "./interfaces/IERC2362.sol";
 
 /**
@@ -66,7 +66,7 @@ contract ADOMedianizer is IERC2362, Ownable
 		{
 			try IERC2362(oracles.at(i)).valueFor(_id) returns (int256 val, uint256 time, uint256 status)
 			{
-				if (status >= 200 && status < 300 && time + validity > now) // valid HTTP status are all 2xx
+				if (status >= 200 && status < 300 && time + validity > block.timestamp) // valid HTTP status are all 2xx
 				{
 					values[length] = val;
 					++length;
@@ -77,7 +77,7 @@ contract ADOMedianizer is IERC2362, Ownable
 
 		if (length == 0) { return (0, 0, 400); }
 
-		return (median(values, length), now, 200);
+		return (median(values, length), block.timestamp, 200);
 	}
 
 
